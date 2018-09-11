@@ -45,6 +45,7 @@ https://lalatw.github.io/FriendFinder/
 * Apply get and post methods.
 * Apply Node.js to run backend. 
 * Run npm install to use pre-built packages of modules.
+* Deploy a Node web server to Heroku.
 
 
 # Author 
