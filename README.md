@@ -2,7 +2,8 @@
 Assignment_FriendFinder
 
 # Link to deployed site
-https://lalatw.github.io/FriendFinder/
+* https://lalatw.github.io/FriendFinder/
+* https://fierce-river-92581.herokuapp.com/
 
 
 # Images
