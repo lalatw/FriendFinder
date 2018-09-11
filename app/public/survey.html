@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>FriendFinder</title>
+    <title>Friend Finder Survey</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
@@ -12,15 +12,31 @@
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 
+<style type="text/css">
+    body{
+        background-image: url("https://images.all-free-download.com/images/graphiclarge/defocus_green_abstract_background_6817039.jpg");
+        background-size: cover;
+        margin: auto;
+    }
+
+    h1{
+        color: rgba(189, 22, 44, 0.74);
+    }
+
+    h2{
+        color: rgba(70, 22, 180, 0.74);
+    }
+    </style>
+
 <body>
 
     <div class="uk-container">
-
+        <h2 class="display-4 text-center"><a href="/"><i class="fas fa-user-friends"></i></a> Movie Friend Finder <a href="/"><i class="fas fa-home"></i></a></h2>
 
         <h1 class="uk-heading-divider">Survey Questions</h1>
 
@@ -33,14 +49,14 @@
                 <legend class="uk-legend">Name (Required)</legend>
 
                 <div class="uk-margin">
-                    <input id="name" class="uk-input" type="text" placeholder="Your Name">
+                    <input id="name" class="uk-input forminput" type="text" placeholder="Your Name">
                 </div>
 
 
                 <legend class="uk-legend">Link to Photo Image (Required)</legend>
 
                 <div class="uk-margin">
-                    <input id="photolink" class="uk-input" type="text" placeholder="URL">
+                    <input id="photolink" class="uk-input forminput" type="text" placeholder="URL">
                 </div>
 
             </fieldset>
@@ -53,7 +69,7 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 1</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
                 <legend class="uk-legend">My favorite film hero is Bruce Wayne, the Batman.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
@@ -75,7 +91,7 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 2</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
                 <legend class="uk-legend">My favorite film villain is Darth Vader.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
@@ -99,7 +115,7 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 3</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
                 <legend class="uk-legend">The best movie sequel is Star Trek.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
@@ -122,9 +138,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 4</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">Wonder Woman is the best movie ever regarding female superheros.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio4" value="1"> 1</label>
@@ -143,9 +159,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 5</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">Fred Flintstone is so funny.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio5" value="1"> 1</label>
@@ -164,9 +180,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 6</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">The Lord of the Rings sequel movies are must see.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio6" value="1"> 1</label>
@@ -185,9 +201,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 7</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">Everyone loves Deadpool.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio7" value="1"> 1</label>
@@ -207,9 +223,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 8</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">I prefer to go to a movie theater with a group of friends.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio8" value="1"> 1</label>
@@ -231,9 +247,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 9</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">I watch at least one movie in a theater every month.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio9" value="1"> 1</label>
@@ -254,9 +270,9 @@
     <div class="uk-container">
         <h3 class="uk-heading-bullet">Question 10</h3>
         <form>
-            <fieldset class="uk-fieldset">
+            <fieldset class="uk-fieldset answerselect">
 
-                <legend class="uk-legend">Your mind is always buzzing with unexplored ideas and plans.</legend>
+                <legend class="uk-legend">The movie Harry Potter is even better than its book.</legend>
                 <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
                     <label>Strongly Disagree</label>
                     <label><input class="uk-radio" type="radio" name="radio10" value="1"> 1</label>
@@ -288,19 +304,19 @@
     <div class="uk-margin"></div>
 
 
-    <div id="modaldiv"></div>
 
     <!-- To show message in modal pop-up -->
-    <div id="message" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
-            <h2 class="uk-modal-title">Best Match</h2>
-            <h3 id="matchName"></h3>
-            <img id="matchPhoto" src="" alt="">
-            <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+    <div id="modaldiv" role="dialog" uk-toggle="target: #message">
+        <div id="message" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title">Best Match</h2>
+                <h3 id="matchName"></h3>
+                <img id="matchPhoto" src="" alt="">
+                <br>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Close</button>
+            </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
@@ -311,46 +327,81 @@
 $("#submitBtn").on("click", function(event) {
     event.preventDefault();
 
-    var newPerson = {
-        name: $("#name").val().trim(),
-        photo: $("#photolink").val().trim(),
-        scores: [
-            parseInt($('input[name=radio1]:checked').val()),
-            parseInt($('input[name=radio2]:checked').val()),
-            parseInt($('input[name=radio3]:checked').val()),
-            parseInt($('input[name=radio4]:checked').val()),
-            parseInt($('input[name=radio5]:checked').val()),
-            parseInt($('input[name=radio6]:checked').val()),
-            parseInt($('input[name=radio7]:checked').val()),
-            parseInt($('input[name=radio8]:checked').val()),
-            parseInt($('input[name=radio9]:checked').val()),
-            parseInt($('input[name=radio10]:checked').val())
-        ]
-    };
+    //to confirm all form field are filled in
+    function checkForm() {
+        var isEnter = true;
+        $(".forminput").each(function() {
+          if ($(this).val() === "") {
+            isEnter = false;
+          }
+        });
 
-    console.log(newPerson);
+        if (!($('input[name=radio1]:checked').val()) 
+        || (!$('input[name=radio2]:checked').val())
+        || (!$('input[name=radio3]:checked').val())
+        || (!$('input[name=radio4]:checked').val())
+        || (!$('input[name=radio5]:checked').val())
+        || (!$('input[name=radio6]:checked').val())
+        || (!$('input[name=radio7]:checked').val())
+        || (!$('input[name=radio8]:checked').val())
+        || (!$('input[name=radio9]:checked').val())
+        || (!$('input[name=radio10]:checked').val()))
+            {
+                isEnter = false;
+            }
 
-    $.post("/api/friends", newPerson, function(data) {
+        return isEnter;
+      }
+
+
+    if(checkForm()) {
     
-        $("#matchName").text(data.name);
-        $("#matchPhoto").attr("src", data.photo);
-        $("#message").modal("toggle");
+    //send newPerson data as an object
+        var newPerson = {
+            name: $("#name").val().trim(),
+            photo: $("#photolink").val().trim(),
+            scores: [
+                parseInt($('input[name=radio1]:checked').val()),
+                parseInt($('input[name=radio2]:checked').val()),
+                parseInt($('input[name=radio3]:checked').val()),
+                parseInt($('input[name=radio4]:checked').val()),
+                parseInt($('input[name=radio5]:checked').val()),
+                parseInt($('input[name=radio6]:checked').val()),
+                parseInt($('input[name=radio7]:checked').val()),
+                parseInt($('input[name=radio8]:checked').val()),
+                parseInt($('input[name=radio9]:checked').val()),
+                parseInt($('input[name=radio10]:checked').val())
+            ]
+        };
+
+        console.log(newPerson);
+
+        $.post("/api/friends", newPerson, function(data) {
+        
+        //trigger the modal popup after submit
+            $("#matchName").text(data.name);
+            $("#matchPhoto").attr("src", data.photo);
+            var modal = UIkit.modal("#message");
+            modal.show(); 
 
 
-        //empty the form
-        $("#name").val(""),
-        $("#photolink").val(""),
-        $('input[name=radio1]:checked').val(""),
-        $('input[name=radio2]:checked').val(""),
-        $('input[name=radio3]:checked').val(""),
-        $('input[name=radio4]:checked').val(""),
-        $('input[name=radio5]:checked').val(""),
-        $('input[name=radio6]:checked').val(""),
-        $('input[name=radio7]:checked').val(""),
-        $('input[name=radio8]:checked').val(""),
-        $('input[name=radio9]:checked').val(""),
-        $('input[name=radio10]:checked').val("")
-    });
+            //empty the form after submit
+            $("#name").val("");
+            $("#photolink").val("");
+            $('input[name=radio1]').removeAttr("checked");
+            $('input[name=radio2]').removeAttr("checked");
+            $('input[name=radio3]').removeAttr("checked");
+            $('input[name=radio4]').removeAttr("checked");
+            $('input[name=radio5]').removeAttr("checked");
+            $('input[name=radio6]').removeAttr("checked");
+            $('input[name=radio7]').removeAttr("checked");
+            $('input[name=radio8]').removeAttr("checked");
+            $('input[name=radio9]').removeAttr("checked");
+            $('input[name=radio10]').removeAttr("checked");
+        });
+    } else {
+        alert("Please fill in all fields with your answers.");
+    }
 });
 
 

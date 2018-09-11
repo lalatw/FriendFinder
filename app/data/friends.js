@@ -3,9 +3,9 @@ var friendArray = [
         name:"Eric",
         photo:"https://img.costumecraze.com/images/vendors/rubies/887358-Star-Trek-Blue-Shirt-Adult-Costume-large.jpg",
         scores:[
-            5,
-            1,
             4,
+            1,
+            5,
             4,
             5,
             1,
@@ -28,7 +28,7 @@ var friendArray = [
             5,
             3,
             4,
-            4
+            5
           ]
     },
     {
@@ -36,7 +36,7 @@ var friendArray = [
         photo:"https://img.costumecraze.com/images/vendors/rubies/888179-Kids-Deluxe-Hooded-Sith-Robe-Costume-2main.jpg",
         scores:[
             3,
-            4,
+            5,
             3,
             3,
             3,
@@ -45,6 +45,38 @@ var friendArray = [
             5,
             1,
             5
+          ]
+    },
+    {
+        name:"Jane",
+        photo:"https://img.costumecraze.com/images/vendors/rubies/820076-Adult-Wonder-Woman-Costume-large.jpg",
+        scores:[
+            3,
+            2,
+            3,
+            5,
+            4,
+            3,
+            2,
+            1,
+            4,
+            4
+          ]
+    },
+    {
+        name:"John",
+        photo:"https://img.costumecraze.com/images/vendors/rubies/15736-large.jpg",
+        scores:[
+            2,
+            2,
+            2,
+            2,
+            5,
+            2,
+            3,
+            3,
+            1,
+            3
           ]
     },
 

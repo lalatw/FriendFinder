@@ -7,7 +7,6 @@ module.exports=function(app) {
         res.json(friendData);
     });
 
-
     //POST routes /api/friends that will handle incoming survey results and do the the compatibility. 
     app.post("/api/friends", function(req, res) {
 
@@ -15,19 +14,16 @@ module.exports=function(app) {
         friendData.push(req.body);
         
         var currentPerson = friendData[friendData.length-1];
-        //console.log(friendData.length);
-        //console.log("current person:"+currentPerson);
+        console.log("current person:"+currentPerson);
 
         //the temp closest match person's index
         var closestMatchPerson = 0;
 
         //the temp closest match person's score
-        var closestScore = 0;
+        var closestScore = 50;
 
         for (var i=0; i<friendData.length-1; i++) {
- 
             var scoreDiff = compare(currentPerson, friendData[i]);
-
             if (scoreDiff<closestScore) {
                 closestScore = scoreDiff;
                 closestMatchPerson = i;
@@ -37,10 +33,7 @@ module.exports=function(app) {
         console.log(friendData[closestMatchPerson]);
         res.json(friendData[closestMatchPerson]);
 
-
-
     });
-
 
     //the function to compare the score of current person with others' score
     function compare (currentPerson, otherObj) {
@@ -50,7 +43,6 @@ module.exports=function(app) {
         }
         return scoreDifference;
     }
-
 
 };
 
